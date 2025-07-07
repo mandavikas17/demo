@@ -20,7 +20,7 @@
 
   <modules>
     <module>server</module>
-    <module>webapp</module>
+<!--     <module>webapp</module> -->
   </modules>
 
   <build>
