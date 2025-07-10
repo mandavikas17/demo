@@ -19,8 +19,8 @@
 </properties>
 
   <modules>
-    <module>server</module>
-<!--     <module>webapp</module> -->
+<!--     <module>server</module> -->
+    <module>webapp</module> 
   </modules>
 
   <build>
