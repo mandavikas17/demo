@@ -1,37 +1,57 @@
-<form action="action_page.php">
-  <div class="container">
-    <h1> New_User Register for DevOps Learning</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-     
-    <label for="Name"><b>Enter Full Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
-    <br>
-    
-    <label for="mobile"><b>Enter mobile</b></label>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
-    <br>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My JSP Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        .current-time {
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello from JSP! 👋</h1>
+        <p>This is a simple JavaServer Pages (JSP) example.</p>
+        <p>JSP allows you to embed Java code within HTML to create dynamic web content.</p>
 
-    <label for="email"><b>Enter Email Address</b></label>
-    <input type="text" placeholder="Enter Email Address" name="email" id="email" required>
-    <br>
+        <%-- JSP Scriptlet to display current date and time --%>
+        <%
+            java.util.Date now = new java.util.Date();
+            String message = "The current time is: " + now.toString();
+        %>
+        <p class="current-time"><%= message %></p>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-    <br>
+        <%-- JSP Expression to display a simple calculation --%>
+        <p>2 + 3 = <%= 2 + 3 %></p>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
-    <br>
-    <p>By creating an account you agree to our <a href="#">Terms and Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-
-   <h1> Thankyou, Happy Learning </h1>
-   <h1>Build Amazing Carrer With Devops <h1>
-   <b> I appreciate</b>
-</form>
+        <%-- Including another JSP file (if it existed, e.g., footer.jsp) --%>
+        <%-- Uncomment the line below to see how to include another file --%>
+        <%-- <jsp:include page="footer.jsp" /> --%>
+    </div>
+</body>
+</html>
