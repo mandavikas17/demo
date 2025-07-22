@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #comment
 #one more commnet
 =======
 >>>>>>> 0cd54daf41e2b39fdbc01132ade33e5b7cc3c272
+=======
+#apple
+>>>>>>> 5d058ba3b87e448b7a0e9c1295c30593e2c506e0
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
