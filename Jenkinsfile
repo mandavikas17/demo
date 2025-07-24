@@ -11,6 +11,7 @@ pipeline {
         LATEST_IMAGE_TAG = "${DOCKERHUB_USERNAME}/${IMAGE_NAME}:latest"
     }
 
+    
     stages {
         stage("git clone") {
             steps {
