@@ -22,7 +22,7 @@
   <modules>
     <module>server</module>
     <module>webapp</module> 
-<module>sample</module>
+<!-- <module>sample</module> -->
   </modules>
 
   <build>
