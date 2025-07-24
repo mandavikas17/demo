@@ -12,3 +12,4 @@ COPY ./webapp/target/*.war /usr/local/tomcat/webapps/ROOT.war
 # COPY ./server/target/server.jar app.jar
 # EXPOSE 8080
 # ENTRYPOINT ["java", "-jar", "app.jar"]
+
