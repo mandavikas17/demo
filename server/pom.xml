@@ -16,7 +16,7 @@
   <description>Logic.</description>
 
   <build>
-    <finalName>${project.artifactId}</finalName>
+    <finalName>${project.artifactId}-${project.version}-b${buildNumber}</finalName>
   </build>
 
   <dependencies>
